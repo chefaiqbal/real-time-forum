@@ -34,6 +34,16 @@
         "lastName": "Stark",
         "email": "arya@gameofthrone.film",
         "password": "faceless"
+      },
+
+      {
+        "nickname": "chef",
+        "age": 20,
+        "gender": "male",
+        "firstName": "Amir",
+        "lastName": "Iqbal",
+        "email": "chef@ai.com",
+        "password": "Test@123"
       }
                   
 ]

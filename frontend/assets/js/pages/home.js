@@ -114,7 +114,7 @@ export default class Home extends Page {
             <nav>
                 <div class="container">
                     <h2 class="log">
-                        Forum
+                        Lazy Forum
                     </h2>
                     <div class="search-bar">
                         <i class="uil uil-search"></i>
