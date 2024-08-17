@@ -44,6 +44,25 @@
         "lastName": "Iqbal",
         "email": "chef@ai.com",
         "password": "Test@123"
-      }
-                  
+      },
+
+      {
+      "nickname": "tony1",
+      "age": 20,
+      "gender": "male",
+      "firstName": "tony",
+      "lastName": "guy",
+      "email": "tony@guy.com",
+      "password": "Test@1234"
+    },
+    
+    {      
+    "nickname": "girl1",
+    "age": 20,
+    "gender": "female",
+    "firstName": "girl",
+    "lastName": "012",
+    "email": "girl@01.com",
+    "password": "Test@1234"
+  }
 ]
