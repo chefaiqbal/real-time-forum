@@ -45,10 +45,11 @@ export default class Post {
         const Content = document.getElementById("post-content").value.trim();
         let Categories = [];
 
-        if (!Image) {
-            alert("Please select an image.");
-            return null;
-        }
+        // Remove the check for image
+        // if (!Image) {
+        //     alert("Please select an image.");
+        //     return null;
+        // }
         
         // Check that the title is not empty
         if (!Title) {
@@ -77,14 +78,17 @@ export default class Post {
     
         Categories = Categories.map(item => `#${item.trim()}`).join(' ');
     
-        const reader = new FileReader();
-        reader.onload = () => {
-            const Image = reader.result.replace(/^data:image\/[a-z]+;base64,/, "");
-            this.currentPost = { Title, Image, Content, Categories };
-        };
-        
-        reader.readAsDataURL(Image);
-
+        if (Image) {
+            const reader = new FileReader();
+            reader.onload = () => {
+                const Image = reader.result.replace(/^data:image\/[a-z]+;base64,/, "");
+                this.currentPost = { Title, Image, Content, Categories };
+            };
+            
+            reader.readAsDataURL(Image);
+        } else {
+            this.currentPost = { Title, Image: null, Content, Categories };
+        }
     
         return { Title, Image, Content, Categories };
     }
