@@ -157,7 +157,7 @@ export default class Post {
                     <p>Liked by <b id="likePost-${postId}">${post.nbLike || 0 }</b> persons</p>
                 </div>
                 <div class="caption">
-                    <p><b>Daenerys</b> ${escapedContent} <span class="hash-tag">${escapedCategories}</span></p>
+                    <p><b>${userPosted.firstName} ${userPosted.lastName}</b> ${escapedContent} <span class="hash-tag">${escapedCategories}</span></p>
                 </div>
                 <div class="post-comment">
                     <div class="head-comment">
