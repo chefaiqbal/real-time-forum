@@ -1,27 +1,46 @@
-# Real-Time Forum Project
+# 🌟 Real-Time Forum Project
 
-## Objectives
+
+## 🚀 Objectives
 
 This project focuses on the following key points:
 
-1. User registration and login
-2. Post creation
-3. Commenting on posts
-4. Private messaging
+- **User Registration and Login** 🔐
+- **Post Creation** 📝
+- **Commenting on Posts** 💬
+- **Private Messaging** 💌
 
-Your new forum will include five distinct components:
+The forum includes five distinct components:
 
-- **SQLite**: Data storage, similar to the previous forum
-- **Golang**: Data handling and Websockets (Backend)
-- **JavaScript**: Handling all Frontend events and client Websockets
-- **HTML**: Structuring the page elements
-- **CSS**: Styling the page elements
+- **SQLite**: Data storage 💾
+- **Golang**: Data handling and Websockets (Backend) 🏗️
+- **JavaScript**: Handling all Frontend events and client Websockets 🌐
+- **HTML**: Structuring the page elements 🏷️
+- **CSS**: Styling the page elements 🎨
 
-You will have a single HTML file, so all page changes need to be managed in JavaScript (Single Page Application).
+This project uses a single HTML file, so all page changes are managed in JavaScript (Single Page Application).
 
-## Project Architecture
+
+## Tools & Skills 🧰
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![HTML5](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=E34F26)
+![CSS3](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=1572B6)
+![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=2496ED)
+![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=F05032)
+![GitHub Copilot](https://img.shields.io/badge/githubcopilot-%23026AA7.svg?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
+![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+## 📁 Project Architecture
 
 This project employs a microservices architecture. Each service is responsible for a specific functionality of the application. Here is the overall project structure:
+
+
 
 ```
 .
@@ -76,55 +95,46 @@ This project employs a microservices architecture. Each service is responsible f
 │ └── utils
 ```
 
-
-### Architecture Details
+### 🏗️ Architecture Details
 
 1. **Microservices**
-    - Each microservice is autonomous and responsible for a specific part of the application (authentication, chat, notifications, posts).
-    - Microservices are defined in the `backend/services` directory.
-    - Interaction between microservices is done via REST APIs.
+    - Each microservice is autonomous and responsible for a specific part of the application (authentication, chat, notifications, posts). 🔄
+    - Defined in the `backend/services` directory.
+    - Interaction via REST APIs. 🌐
 
 2. **Gateway**
-    - A single entry point for all requests is managed by the gateway located in `backend/server/gateway`.
-    - The gateway routes requests to the appropriate microservices based on the URL.
+    - A single entry point for all requests managed by the gateway located in `backend/server/gateway`. 🚪
+    - Routes requests to the appropriate microservices based on the URL. 🔀
 
 3. **Websockets**
-    - Used to handle real-time messaging in the chat and notifications.
-    - Implemented in the backend with Golang and the frontend with JavaScript.
+    - Handles real-time messaging in chat and notifications. 💬
+    - Implemented in Golang (backend) and JavaScript (frontend). 🌐
 
 4. **JWT Authentication**
-    - Using JSON Web Tokens (JWT) to secure endpoints.
+    - Secures endpoints using JSON Web Tokens (JWT). 🔐
     - Custom JWT implementation in `backend/utils/jwt`.
 
-### Services
+### 🔧 Services
 
-- **Auth**: Manages user registration, login, and logout.
-- **Chat**: Manages private messages between users.
-- **Notification**: Manages real-time notifications.
-- **Posts**: Manages post creation and comments.
+- **Auth**: Manages user registration, login, and logout. 🧑‍🤝‍🧑
+- **Chat**: Manages private messages between users. 💬
+- **Notification**: Manages real-time notifications. 📲
+- **Posts**: Manages post creation and comments. 📝
 
-## Usage
+## 🚀 Usage
 
-To start the application, follow these steps:
-
-1. **Clone the repository**
+**Start the services in following order**
 
 ```bash
-git clone <repo-url>
-cd <repo-name>
-```
+cd backend/cmd/app
+go run main.go
 
-2. **Start the services**
-
-```
-
-
-```
-cd ../bootservice
+cd backend/cmd/bootservices
 go run main.go
 ```
 
-Open your browser and go to http://localhost:3000
+Open your browser and go to http://localhost:3000 🌐
 
-## Conclusion
-This project uses a microservices architecture to separate responsibilities and facilitate maintenance and scalability. Each service is autonomous and communicates with others via REST APIs. Websockets are used for real-time communication for chat and notification functionalities. Authentication is secured using JWT.
+## 🎉 Conclusion
+
+This project uses a microservices architecture to separate responsibilities and facilitate maintenance and scalability. Each service is autonomous and communicates with others via REST APIs. Websockets enable real-time communication for chat and notifications. Authentication is secured using JWT.
