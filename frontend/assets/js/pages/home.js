@@ -114,7 +114,7 @@ export default class Home extends Page {
             <nav>
                 <div class="container">
                     <h2 class="log">
-                        Lazy Forum
+                        Lazy Snap Forum
                     </h2>
                    <!-- 
                         <div class="search-bar">

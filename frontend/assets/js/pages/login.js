@@ -52,8 +52,13 @@ export default class Login extends Page {
         return `
         <div class="login">
                 <div class="welcome__message">
-            <h2>Welcome to Lazy Forum</h2>
-            <p>Only registered users can access the forum. Kindly register and join the discussion or login to continue.</p>
+                <h2>Welcome to Lazy Snap Forum</h2>
+                <p>📸 Dive into our vibrant community where every post is a visual treat!</p>
+                <p>To join the discussions and share your photos, please <strong>register</strong>.</p>
+                <p>If you're already a member, <strong>log in</strong> to continue engaging with our photo-centric conversations.</p>
+                <p>We can't wait to see what you'll share!</p>
+
+
         </div>
             <div class="login__content">
                 <div class="login__img">
