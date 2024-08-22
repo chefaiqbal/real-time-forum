@@ -45,11 +45,11 @@ export default class Post {
         const Content = document.getElementById("post-content").value.trim();
         let Categories = [];
 
-        // Remove the check for image
-        // if (!Image) {
-        //     alert("Please select an image.");
-        //     return null;
-        // }
+        
+        if (!Image) {
+             alert("Please select an image.");
+             return null;
+         }
         
         // Check that the title is not empty
         if (!Title) {

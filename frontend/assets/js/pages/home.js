@@ -116,10 +116,12 @@ export default class Home extends Page {
                     <h2 class="log">
                         Lazy Forum
                     </h2>
-                    <div class="search-bar">
+                   <!-- 
+                        <div class="search-bar">
                         <i class="uil uil-search"></i>
                         <input type="search" name="" id="" placeholder="search posts">
-                    </div>
+                    </div> 
+                    -->
                     <div class="create">
                     
                         <label class="btn btn-primary" for="create-post">Create</label>
