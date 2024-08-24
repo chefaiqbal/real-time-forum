@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌟 Real-Time Forum Project
 
 
@@ -138,3 +139,7 @@ Open your browser and go to http://localhost:3000 🌐
 ## 🎉 Conclusion
 
 This project uses a microservices architecture to separate responsibilities and facilitate maintenance and scalability. Each service is autonomous and communicates with others via REST APIs. Websockets enable real-time communication for chat and notifications. Authentication is secured using JWT.
+=======
+# real-time-forum
+A real-time forum application built with Golang, SQLite, and JavaScript, featuring user registration, post creation, commenting, and private messaging.
+>>>>>>> 80733a1a796ddee80876801792b213d191829fb6
