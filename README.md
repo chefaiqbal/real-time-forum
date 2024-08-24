@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🌟 Real-Time Forum Project
 
 
@@ -142,4 +141,3 @@ This project uses a microservices architecture to separate responsibilities and 
 =======
 # real-time-forum
 A real-time forum application built with Golang, SQLite, and JavaScript, featuring user registration, post creation, commenting, and private messaging.
->>>>>>> 80733a1a796ddee80876801792b213d191829fb6
