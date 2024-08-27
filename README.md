@@ -9,6 +9,7 @@ This project focuses on the following key points:
 - **Post Creation** 📝
 - **Commenting on Posts** 💬
 - **Private Messaging** 💌
+- **Typing in Progress Engine** ⌨️
 
 The forum includes five distinct components:
 
@@ -120,7 +121,7 @@ This project employs a microservices architecture. Each service is responsible f
 - **Chat**: Manages private messages between users. 💬
 - **Notification**: Manages real-time notifications. 📲
 - **Posts**: Manages post creation and comments. 📝
-
+  
 ## 🚀 Usage
 
 **Start the services in following order**
